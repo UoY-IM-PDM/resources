@@ -17,6 +17,28 @@
             already familiar with using GitHub via the command line, feel free to skip these instructions and 
             continue to use the command line.
         </em></p>
+        <p>Key terms:</p>
+        <ul>
+            <li><strong>Repository (repo for short)</strong> - A place to store code files.</li>
+            <li><strong>Remote repo</strong> - The copy of the repository that lives on GitHub.com.</li>
+            <li><strong>Local repo</strong> - The copy of the repository that lives on your computer.</li>
+            <li><strong>Origin</strong> - The location of the remote repository.</li>
+            <li><strong>Clone</strong> - Make an initial copy (or clone) of a remote repository on your computer.</li>
+            <li><strong>Fetch</strong> - Fetch changes from the remote repo to your local repo.</li>
+            <li><strong>Pull</strong> - Integrate fetched changes into your local repo.</li>
+            <li><strong>Commit</strong> - Save the current state of your local repo. If something goes wrong, you will be able to "roll back" to an earlier commit.</li>
+            <li><strong>Push</strong> - Push the changes your have committed locally to the remote repo.</li>
+            <li><strong>Merge conflict</strong> - This occurs when you have changes committed to your local repo that conflict with 
+            changes made to the remote repo and GitHub cannot figure out how to resolve the differences. These can be tricky to sort out 
+            so ask an instructor for help.</li>
+        </ul>
+        <p>The standard workflow for using GitHub is:</p>
+        <ol>
+            <li>Clone a remote repo to your computer using GitHub Desktop.</li>
+            <li>Using VS Code, make edits to your local repo as needed and make sure to save your changes.</li>
+            <li>When you are finished or even just taking a break, use GitHub Desktop to commit your changes then push them to the remote repo.</li>
+            <li>Next time you want to work on the repo, use GitHub Desktop to fetch and pull changes from the origin, then start again from step 2.</li>
+        </ol>
         <h2 id="setup">Set up</h2>
         <ol>
             <li>If you are working on a lab computer, GitHub Desktop should already be installed. Find it in Applications and open it. If you 
@@ -66,7 +88,6 @@
                     </li>
                     <li>Click the Add button then select "Clone Repository".<br>
                     <img src="./images/GitDesktop-add.png" alt="Click the Add button then Clone repository." width="400px"></li>
-                    
                 </ol>
             </li>
             <li>
@@ -81,7 +102,7 @@
         <h2 id="commit">Commit and push your work</h2>
         <p>For any repo that you have write access to, such as your repo for a practical, you should <strong>commit</strong> your changes and <strong>push</strong> 
         them to the remote repo--the copy of the repository that lives on GitHub.com. This will back up your code and keep track of 
-        different versions.</p>
+        different versions. Note that you do not have write access to PDM-example-code so you cannot push your changes for that repository.</p>
         <ol>
             <li>When you are ready to commit your work, open the repository in GitHub Desktop by selecting it from the list of available repos on the home 
                 screen. If another repo is open, click the little triangle next to its name to show the repo list.
@@ -95,7 +116,7 @@
         <h3 id="pull-example-code">Pull changes</h3>
         <p>We recommend you do this after every lecture so that you always have the latest code.</p>
         <ol>
-            <li>It you haven't already done so, follow the instructions above to clone the PDM-example-code repo. 
+            <li>It you haven't already done so, follow the <a href="#clone">instructions above</a> to clone the PDM-example-code repo. 
                 You should have been added to the repo but, if not, you can use the URL <code>https://github.com/UoY-IM-PDM/PDM-example-code.git</code>.
             </li>
             <li>In GitHub Desktop, select PDM-example-code. If you have recently cloned the repo, it will likely already be 
